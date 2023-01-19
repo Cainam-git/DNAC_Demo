@@ -19,10 +19,11 @@ def get_token():
         'Authorization': 'Basic ZGV2bmV0dXNlcjpDaXNjbzEyMyE='
     }
 
-    response = requests.request("POST",
+    response = requests.request(method="POST",
                                 url=base_url + "dna/system/api/v1/auth/token",
                                 headers=headers,
                                 verify=False).json()
+
     # Parse out the token and return it
     token = response['Token']
     return token
@@ -40,7 +41,7 @@ def get_network_devices(token):
         'X-Auth-Token': token
     }
 
-    response = requests.request("GET",
+    response = requests.request(method="GET",
                                 url=base_url + "dna/intent/api/v1/network-device/",
                                 headers=headers,
                                 verify=False).json()
