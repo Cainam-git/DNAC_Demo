@@ -1,7 +1,7 @@
 import requests
 import urllib3.exceptions
 
-# Disable insecure warnings
+# Disable certificate warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Declare API BASE URL
