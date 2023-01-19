@@ -7,9 +7,9 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Declare API BASE URL
 base_url = "https://sandboxdnac.cisco.com/"
 
-##########################
+########################
 # RETRIEVE LOGIN TOKEN #
-##########################
+########################
 
 
 def get_token():
