@@ -47,7 +47,7 @@ def get_network_devices(token):
                                 verify=False).json()
     return response
 
-######################
+#####################
 # START MAIN SCRIPT #
 #####################
 
