@@ -53,9 +53,13 @@ def get_network_devices(token):
 
 
 if __name__ == '__main__':
+    # Fetch the login token
     login_token = get_token()
+
+    # Obtain a list of all network devices
     list_of_net_devices = get_network_devices(login_token)
 
+    # Print out some basic information about all network devices
     print("*************************************************")
 
     for device in list_of_net_devices['response']:
