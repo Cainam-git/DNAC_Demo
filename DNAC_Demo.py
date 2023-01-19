@@ -59,7 +59,9 @@ if __name__ == '__main__':
     # Obtain a list of all network devices
     list_of_net_devices = get_network_devices(login_token)
 
-    # Print out some basic information about all network devices
+    #############################################################
+    # Print out some basic information about all network devices#
+    #############################################################
     print("*************************************************")
 
     for device in list_of_net_devices['response']:
@@ -70,3 +72,4 @@ if __name__ == '__main__':
         print(f"UpTime:        {device['upTime']}")
         print(f"id:            {device['id']}")
         print("*************************************************")
+    #############################################################
